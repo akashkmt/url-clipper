@@ -1,6 +1,7 @@
 {
   "manifest_version": 3,
   "name": "URL Clipper",
+  "author": "Akash Kumawat <akashkmt963@gmail.com>",
   "version": "1.1",
   "description": "Copy the current tab's URL to clipboard with a keyboard shortcut.",
   "permissions": [
