@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>URL Clipper — Settings</title>
+    <link rel="stylesheet" href="options.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="page-header">
+        <svg
+          class="page-icon"
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2.2"
+        >
+          <path
+            d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"
+          />
+          <path
+            d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"
+          />
+        </svg>
+        <div>
+          <h1>URL Clipper</h1>
+          <p class="page-sub">Extension settings</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-label">Active shortcut</div>
+        <div class="shortcut-display" id="currentShortcut">—</div>
+        <p class="hint">
+          Use this key combination on any tab to copy its URL instantly.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="card-label">Customize shortcut</div>
+        <p class="desc">
+          Chrome manages extension shortcuts globally. Open the shortcuts page
+          to rebind.
+        </p>
+        <button id="openChromeShortcuts" class="btn">
+          <svg
+            width="13"
+            height="13"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.2"
+          >
+            <path
+              d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+            />
+            <polyline points="15 3 21 3 21 9" />
+            <line x1="10" y1="14" x2="21" y2="3" />
+          </svg>
+          Open Chrome Shortcuts
+        </button>
+      </div>
+
+      <div class="info-card">
+        <div class="info-row">
+          <span class="info-dot"></span>
+          Works on all websites automatically
+        </div>
+        <div class="info-row">
+          <span class="info-dot"></span>
+          Toast notification appears for 3 seconds
+        </div>
+        <div class="info-row">
+          <span class="info-dot"></span>
+          Restricted pages (chrome://) handled gracefully
+        </div>
+      </div>
+    </div>
+    <script src="options.js"></script>
+  </body>
+</html>

@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: #0b0d14;
+  color: #c4cde8;
+  padding: 40px 20px;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 520px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Page header */
+.page-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding-bottom: 8px;
+}
+
+.page-icon {
+  color: #818cf8;
+  flex-shrink: 0;
+}
+
+h1 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #e2e8f0;
+  letter-spacing: -0.01em;
+}
+
+.page-sub {
+  font-size: 12px;
+  color: #3d4470;
+  margin-top: 2px;
+}
+
+/* Cards */
+.card {
+  background: #111420;
+  border: 1px solid #1a1f35;
+  border-radius: 12px;
+  padding: 20px 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card-label {
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #3d4470;
+}
+
+/* Shortcut display */
+.shortcut-display {
+  font-size: 22px;
+  font-weight: 700;
+  font-family: "SF Mono", Menlo, "Fira Code", monospace;
+  color: #a5b4fc;
+  letter-spacing: 0.04em;
+}
+
+.hint {
+  font-size: 12px;
+  color: #3d4470;
+  line-height: 1.55;
+}
+
+.desc {
+  font-size: 13px;
+  color: #555e80;
+  line-height: 1.6;
+}
+
+/* Button */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: #4f46e5;
+  color: #fff;
+  border: none;
+  padding: 9px 16px;
+  border-radius: 7px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s, transform 0.1s, box-shadow 0.15s;
+  box-shadow: 0 2px 8px rgba(79, 70, 229, 0.35);
+  letter-spacing: 0.01em;
+  align-self: flex-start;
+}
+
+.btn:hover {
+  background: #4338ca;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 14px rgba(79, 70, 229, 0.45);
+}
+
+.btn:active {
+  transform: translateY(0);
+}
+
+.btn:focus-visible {
+  outline: 2px solid #818cf8;
+  outline-offset: 2px;
+}
+
+/* Info card */
+.info-card {
+  background: #0d1020;
+  border: 1px solid #161c30;
+  border-radius: 12px;
+  padding: 16px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.info-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12.5px;
+  color: #555e80;
+  line-height: 1.4;
+}
+
+.info-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #4f46e5;
+  flex-shrink: 0;
+  opacity: 0.7;
+}

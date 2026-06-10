@@ -1,0 +1,44 @@
+{
+  "manifest_version": 3,
+  "name": "URL Clipper",
+  "version": "1.1",
+  "description": "Copy the current tab's URL to clipboard with a keyboard shortcut.",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "commands",
+    "tabs",
+    "clipboardWrite"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "URL Clipper — Copy current URL"
+  },
+  "options_page": "options.html",
+  "commands": {
+    "copy-url": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+C",
+        "mac": "Command+Shift+C"
+      },
+      "description": "Copy current page URL"
+    },
+    "_execute_action": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+U",
+        "mac": "Command+Shift+U"
+      }
+    }
+  },
+  "icons": {
+    "16": "icons/icon-16.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  }
+}
